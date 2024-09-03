@@ -29,7 +29,7 @@ public class TrackingNumberService {
         return repository.save(trackingNumberEntity);
     }
 
-    private String generateRandomTrackingNumber() {
+    public String generateRandomTrackingNumber() {
         StringBuilder sb = new StringBuilder(TRACKING_NUMBER_LENGTH);
         Random random = new Random();
         for (int i = 0; i < TRACKING_NUMBER_LENGTH; i++) {
