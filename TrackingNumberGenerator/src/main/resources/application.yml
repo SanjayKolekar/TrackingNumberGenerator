@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: TrackingNumberGenerator
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://dpg-crb87dlsvqrc73eu2fj0-a.oregon-postgres.render.com:5432/database_tracking
+    username: database_tracking_user
+    password: WikQ0ZwFhnwRhRYdgNNW3JbL2OtBcqWJ
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8182
+
+swagger:
+  server-url: https://trackingnumbergenerator-zest.onrender.com
