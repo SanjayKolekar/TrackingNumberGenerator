@@ -20,7 +20,7 @@ This project provides a RESTful API to generate unique tracking numbers for parc
 ## Installation and Setup
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/ShankarMadane8/TrackingNumberGenerator
+   git clone https://github.com/SanjayKolekar/TrackingNumberGenerator
    cd TrackingNumberGenerator
    mvn clean install
 
