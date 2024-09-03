@@ -24,6 +24,15 @@ This project provides a RESTful API to generate unique tracking numbers for parc
    cd TrackingNumberGenerator
    mvn clean install
 
+## Docker Setup
+1. **Build Stage**
+   Base Image: maven:3.8.5-openjdk-17
+2. **Package Stage**
+   Base Image: openjdk:17-jdk-slim
+   ```bash
+   docker build -t tracking-number-generator 
+   docker run -p 8182:8182 tracking-number-generator
+
 ## Live Host on Render Cloud
 1. **Swagger Documentation:**
    ```bash
